@@ -1,0 +1,12 @@
+Thanks for downloading django-provinceitaliane.
+
+To install it, checkout from Subversion:
+
+    svn co http://django-provinceitaliane.googlecode.com/svn/trunk/ provinceitaliane
+
+and add the included ``provinceitaliane`` directory to your PYTHONPATH, or symlink
+to it from somewhere on your PYTHONPATH.
+
+Note that this application requires Python 2.3 or later, and Django 1.0 or 1.1. You
+can obtain Python from http://www.python.org/ and Django from
+http://www.djangoproject.com/.
