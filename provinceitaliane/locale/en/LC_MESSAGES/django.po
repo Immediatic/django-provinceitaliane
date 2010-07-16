@@ -1,0 +1,81 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-07-16 14:35+0200\n"
+"PO-Revision-Date: 2010-07-16 12:08\n"
+"Last-Translator: <francesco@facconi.eu>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Translated-Using: django-rosetta 0.5.3\n"
+
+#: admin.py:20 admin.py:37 models.py:22 models.py:37
+msgid "Coat"
+msgstr "Coat"
+
+#: models.py:7
+msgid "North"
+msgstr "North"
+
+#: models.py:8
+msgid "Center"
+msgstr "Center"
+
+#: models.py:9
+msgid "South"
+msgstr "South"
+
+#: models.py:10
+msgid "Islands"
+msgstr "Islands"
+
+#: models.py:18 models.py:34
+msgid "Name"
+msgstr "Name"
+
+#: models.py:19
+msgid "Slug"
+msgstr "Slug"
+
+#: models.py:20
+msgid "Position"
+msgstr "Position"
+
+#: models.py:21
+msgid "Special laws"
+msgstr "Special laws"
+
+#: models.py:26
+msgid "Italian Region"
+msgstr "Italian Region"
+
+#: models.py:27
+msgid "Italian Regions"
+msgstr "Italian Regions"
+
+#: models.py:33
+msgid "Code"
+msgstr "Code"
+
+#: models.py:35
+msgid "Region"
+msgstr "Region"
+
+#: models.py:36
+msgid "Capital"
+msgstr "Capital"
+
+#: models.py:41
+msgid "Italian Province"
+msgstr "Italian Province"
+
+#: models.py:42
+msgid "Italian Provinces"
+msgstr "Italian Provinces"
