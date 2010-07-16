@@ -9,6 +9,6 @@ setup(
     packages = find_packages(),
     zip_safe=False,
     package_data = {
-        '': ['fixtures/initial_data.json', 'locale/*'],
+        '': ['fixtures/initial_data.json', 'locale/*/*/*'],
     },
 )
