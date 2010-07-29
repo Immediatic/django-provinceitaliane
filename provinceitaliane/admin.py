@@ -17,7 +17,7 @@ class ProvinceAdmin(VersionAdmin):
         else:
             return "&nbsp;"
     coat_of_arms.allow_tags = True
-    coat_of_arms.short_description = _('Coat')
+    coat_of_arms.short_description = _('coat')
 
 admin.site.register(Province, ProvinceAdmin)
 
@@ -34,6 +34,6 @@ class RegionAdmin(VersionAdmin):
         else:
             return "&nbsp;"
     coat_of_arms.allow_tags = True
-    coat_of_arms.short_description = _('Coat')
+    coat_of_arms.short_description = _('coat')
 
 admin.site.register(Region, RegionAdmin)
