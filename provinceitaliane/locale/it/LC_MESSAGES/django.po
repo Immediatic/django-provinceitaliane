@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2010-07-29 12:41+0200\n"
-"PO-Revision-Date: 2010-07-16 12:07\n"
-"Last-Translator: <francesco@facconi.eu>\n"
+"PO-Revision-Date: 2010-07-29 12:45\n"
+"Last-Translator: Francesco Facconi <francesco@facconi.eu>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -17,9 +17,8 @@ msgstr ""
 "X-Translated-Using: django-rosetta 0.5.3\n"
 
 #: admin.py:20 admin.py:37 models.py:22 models.py:37
-#, fuzzy
 msgid "coat"
-msgstr "Stemma"
+msgstr "stemma"
 
 #: models.py:7
 msgid "North"
@@ -38,56 +37,45 @@ msgid "Islands"
 msgstr "Isole"
 
 #: models.py:18 models.py:34
-#, fuzzy
 msgid "name"
-msgstr "Nome"
+msgstr "nome"
 
 #: models.py:19
-#, fuzzy
 msgid "slug"
-msgstr "Slug"
+msgstr "slug"
 
 #: models.py:20
-#, fuzzy
 msgid "position"
-msgstr "Posizione"
+msgstr "posizione"
 
 #: models.py:21
-#, fuzzy
 msgid "special laws"
-msgstr "Statuto speciale"
+msgstr "statuto speciale"
 
 #: models.py:26
-#, fuzzy
 msgid "italian region"
-msgstr "Regione italiana"
+msgstr "regione italiana"
 
 #: models.py:27
-#, fuzzy
 msgid "italian regions"
-msgstr "Regioni italiane"
+msgstr "regioni italiane"
 
 #: models.py:33
-#, fuzzy
 msgid "code"
-msgstr "Codice"
+msgstr "codice"
 
 #: models.py:35
-#, fuzzy
 msgid "region"
-msgstr "Regione"
+msgstr "regione"
 
 #: models.py:36
-#, fuzzy
 msgid "capital"
-msgstr "Capoluogo"
+msgstr "capoluogo"
 
 #: models.py:41
-#, fuzzy
 msgid "italian province"
-msgstr "Provincia italiana"
+msgstr "provincia italiana"
 
 #: models.py:42
-#, fuzzy
 msgid "italian provinces"
-msgstr "Province italiane"
+msgstr "province italiane"
