@@ -1,0 +1,16 @@
+Metadata-Version: 1.1
+Name: django-provinceitaliane
+Version: 0.1.2
+Author: Francesco Facconi
+Author-email: francesco at facconi eu
+Maintainer: Francesco Facconi
+Maintainer-email: francesco at facconi eu
+Home-page: https://github.com/facconi/django-provinceitaliane
+Download-url: UNKNOWN
+Summary: Province e Regioni Italiane for Django
+License: UNKNOWN
+Description: UNKNOWN
+Keywords: django province regioni italiane italia
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+
