@@ -1,9 +1,8 @@
 from django.contrib import admin
 from django.utils.translation import ugettext as _
-from reversion.admin import VersionAdmin
-from models import Province, Region
+from provinceitaliane.models import Province, Region
 
-class ProvinceAdmin(VersionAdmin):
+class ProvinceAdmin(admin.ModelAdmin):
     list_display = ('coat_of_arms', 'name', 'code', 'region', 'capital')
     list_display_links = ('name', )
     #list_editable = ('region', )
@@ -21,12 +20,13 @@ class ProvinceAdmin(VersionAdmin):
 
 admin.site.register(Province, ProvinceAdmin)
 
-class RegionAdmin(VersionAdmin):
+class RegionAdmin(admin.ModelAdmin):
     list_display = ('coat_of_arms', 'name', 'position', 'special')
     list_display_links = ('name', )
     list_filter = ('position', 'special')
     list_per_page = 20
     search_fields = ('name', )
+    prepopulated_fields = {'slug':('name',)}
 
     def coat_of_arms(self, obj):
         if obj.coat:
