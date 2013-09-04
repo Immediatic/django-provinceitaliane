@@ -9,36 +9,54 @@ region_position_list = (
     ('I', _('Islands')),
 )
 
+
 class Region(models.Model):
     """
     Italian Regions
     References: http://it.wikipedia.org/wiki/Regioni_dell%27Italia
     """
-    name = models.CharField(_('name'), max_length=1000)
-    slug = models.SlugField(_('slug'), unique=True, editable=False)
-    position = models.CharField(_('position'), max_length=1, choices=region_position_list)
-    special = models.BooleanField(_('special laws'), default=False)
-    coat = models.URLField(_('coat'), max_length=200, blank=True, null=True)
+    name = models.CharField(_('Name'), max_length=1000)
+    slug = models.SlugField(_('Slug'), unique=True, editable=False)
+    position = models.CharField(_('Position'), max_length=1, choices=region_position_list)
+    special = models.BooleanField(_('Special laws'), default=False)
+    coat = models.URLField(_('Coat'), max_length=200, blank=True, null=True)
 
     class Meta:
         ordering = ('name', )
-        verbose_name = _("italian region")
-        verbose_name_plural = _("italian regions")
+        verbose_name = _("Italian region")
+        verbose_name_plural = _("Italian regions")
 
     def __unicode__(self):
-        return u'%s' % (self.name)
+        return self.name
+
 
 class Province(models.Model):
-    code = models.CharField(_('code'), max_length=2, unique=True)
-    name = models.CharField(_('name'), max_length=1000)
-    region = models.ForeignKey(Region, verbose_name=_('region'))
-    capital = models.BooleanField(_('capital'), default=False)
-    coat = models.URLField(_('coat'), max_length=200, blank=True, null=True)
+    code = models.CharField(_('Code'), max_length=2, unique=True)
+    name = models.CharField(_('Name'), max_length=1000)
+    region = models.ForeignKey(Region, verbose_name=_('Region'))
+    capital = models.BooleanField(_('Capital'), default=False)
+    coat = models.URLField(_('Coat'), max_length=200, blank=True, null=True)
 
     class Meta:
         ordering = ('code', )
-        verbose_name = _("italian province")
-        verbose_name_plural = _("italian provinces")
+        verbose_name = _("Italian province")
+        verbose_name_plural = _("Italian provinces")
 
     def __unicode__(self):
-        return u'%s' % (self.name)
+        return self.name
+
+
+class District(models.Model):
+    name = models.CharField(_('Name'), max_length=1000)
+    province = models.ForeignKey(Province, verbose_name=_('Province'))
+    prefix = models.CharField(_('Prefix'), max_length=200)
+    cap = models.CharField(_('CAP'), max_length=5)
+    link = models.URLField(_('Link'), null=True, blank=True)
+
+    class Meta:
+        ordering = ('province', 'name')
+        verbose_name = _("Italian district")
+        verbose_name_plural = _("Italian districts")
+
+    def __unicode__(self):
+        return u"{0} ({1})".format(self.name, self.province.code)
