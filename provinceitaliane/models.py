@@ -16,7 +16,7 @@ class Region(models.Model):
     References: http://it.wikipedia.org/wiki/Regioni_dell%27Italia
     """
     name = models.CharField(_('Name'), max_length=1000)
-    slug = models.SlugField(_('Slug'), unique=True, editable=False)
+    slug = models.SlugField(_('Slug'), unique=True)
     position = models.CharField(_('Position'), max_length=1, choices=region_position_list)
     special = models.BooleanField(_('Special laws'), default=False)
     coat = models.URLField(_('Coat'), max_length=200, blank=True, null=True)

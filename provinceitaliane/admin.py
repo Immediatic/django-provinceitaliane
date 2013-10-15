@@ -31,7 +31,7 @@ class RegionAdmin(admin.ModelAdmin):
     list_filter = ('position', 'special')
     list_per_page = 20
     search_fields = ('name', )
-    prepopulated_fields = {'slug':('name',)}
+    prepopulated_fields = {'slug': ('name',)}
 
     def coat_of_arms(self, obj):
         if obj.coat:
