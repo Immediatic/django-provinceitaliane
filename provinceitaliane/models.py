@@ -1,6 +1,7 @@
 #coding=utf-8
 from django.db import models
 from django.utils.translation import ugettext_lazy as _
+from django.utils.encoding import python_2_unicode_compatible
 
 region_position_list = (
     ('N', _('North')),
@@ -10,6 +11,7 @@ region_position_list = (
 )
 
 
+@python_2_unicode_compatible
 class Region(models.Model):
     """
     Italian Regions
@@ -26,10 +28,11 @@ class Region(models.Model):
         verbose_name = _("Italian region")
         verbose_name_plural = _("Italian regions")
 
-    def __unicode__(self):
+    def __str__(self):
         return self.name
 
 
+@python_2_unicode_compatible
 class Province(models.Model):
     code = models.CharField(_('Code'), max_length=2, unique=True)
     name = models.CharField(_('Name'), max_length=1000)
@@ -42,10 +45,11 @@ class Province(models.Model):
         verbose_name = _("Italian province")
         verbose_name_plural = _("Italian provinces")
 
-    def __unicode__(self):
+    def __str__(self):
         return self.name
 
 
+@python_2_unicode_compatible
 class District(models.Model):
     name = models.CharField(_('Name'), max_length=1000)
     province = models.ForeignKey(Province, verbose_name=_('Province'))
@@ -58,5 +62,5 @@ class District(models.Model):
         verbose_name = _("Italian district")
         verbose_name_plural = _("Italian districts")
 
-    def __unicode__(self):
+    def __str__(self):
         return u"{0} ({1})".format(self.name, self.province.code)
