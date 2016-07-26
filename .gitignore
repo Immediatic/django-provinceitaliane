@@ -1,6 +1,7 @@
 build/
 dist/
 django_page_cms.egg-info/
+django_provinceitaliane.egg-info/
 local_settings.py
 *.pyc
 .DS_Store
